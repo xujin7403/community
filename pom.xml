@@ -94,6 +94,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.3.1</version>
+                <configuration>
+                    <url>jdbc:mysql://192.168.174.99:3306/community</url>
+                    <user>root</user>
+                    <password>Xujin@7403</password>
+                    <driver>com.mysql.cj.jdbc.Driver</driver>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
